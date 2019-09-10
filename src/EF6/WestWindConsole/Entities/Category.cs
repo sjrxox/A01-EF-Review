@@ -9,10 +9,16 @@ using System.Threading.Tasks;
 namespace WestWindConsole.Entities
 {
     // TODO: Begin reviewing entity attributes
-    [Table("Categories")]
+    // Identifies which database table this entity is supposed to 
+    // represent (be "mapped" to).
+
+    // Aspect Oriented Programming - ___
+
+    // Attribute 
+    [Table("Categories", Schema = "dbo")]
     public class Category
     {
-        [Key]
+        [Key] // Indicates that this property maps to the PK in the db :D
         public int CategoryID { get; set; }
 
         [Required] // Use this for string/varchar columns that are NOT NULL

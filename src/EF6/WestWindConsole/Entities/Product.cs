@@ -7,6 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace WestWindConsole.Entities
+
+    // int? nullable 
+    // Required for string so iit is not nullable
 {
     // TODO: Begin reviewing entity attributes
     [Table("Products")]
